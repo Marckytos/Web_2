@@ -20,7 +20,12 @@ qrImg.alt="Un codigo QR"
 
 
 qrImg.classList.add('qr-code');
-document.getElementById('qr-code').appendChild(qrImg);
+
+// 🔹 Limpia el contenedor antes de agregar el nuevo QR
+    const contenedor = document.getElementById('qr-code');
+    contenedor.innerHTML = "";
+    contenedor.appendChild(qrImg);
 
 }
+
 
